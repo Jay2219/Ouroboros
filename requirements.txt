@@ -1,0 +1,15 @@
+pydantic>=2.0.0
+pandas
+numpy
+scipy
+scikit-learn
+xgboost
+lightgbm
+google-genai
+gradio
+pyyaml
+kaggle
+python-dotenv
+shap
+matplotlib
+plotly

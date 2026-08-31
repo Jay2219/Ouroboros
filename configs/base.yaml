@@ -1,0 +1,24 @@
+experiment_name: "base_run"
+dataset_split:
+  sparkov_path: "data/raw/sparkov.csv"
+  paysim_path: "data/raw/paysim.csv"
+
+attacks_enabled:
+  - attack_1
+  - attack_2
+  - attack_3
+  - attack_4
+
+generation:
+  target_samples_per_attack: 1000
+  gemini_model: "gemma-4-31b-it"
+  gemini_strong_model: "gemma-4-31b-it"
+
+detection:
+  primary_model: "xgboost"
+  anomaly_detector: "isolation_forest"
+  target_fpr: 0.01
+
+evaluation:
+  run_fidelity: true
+  run_detection: true
